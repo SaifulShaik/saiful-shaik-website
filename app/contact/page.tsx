@@ -18,7 +18,11 @@ export default function ContactPage() {
     setSubmitStatus('idle');
     
     try {
-      // Using Formspree for form handling since we're deploying to GitHub Pages
+      // TODO: Replace YOUR_FORM_ID with your actual Formspree form ID
+      // 1. Go to https://formspree.io and create a free account
+      // 2. Create a new form
+      // 3. Copy your form ID (e.g., xzbqklmn)
+      // 4. Replace YOUR_FORM_ID below with your actual form ID
       const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
         headers: {
@@ -280,4 +284,4 @@ export default function ContactPage() {
       </section>
     </div>
   );
-} 
+}
